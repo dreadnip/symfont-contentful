@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Symfony + Contentful</title>
+</head>
+<body>
+    {% for page in pages %}
+        <h1>{{ page.title }}</h1>
+        {{ page.text.parsed|raw }}
+    {% endfor %}
+</body>
+</html>
